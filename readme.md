@@ -1,4 +1,4 @@
-# LeetCode chalanges - solving problems
+# LeetCode challenges - solving problems
 
 Sample problem-solving using php
 
