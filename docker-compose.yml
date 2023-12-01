@@ -1,0 +1,11 @@
+version: "3"
+
+services:
+  php:
+    build: .
+    image: leet-code-challenges
+    container_name: leet-code-challenges
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    volumes:
+      - ./src:/var/www
