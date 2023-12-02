@@ -15,9 +15,12 @@ class BusPlannerTest extends TestCase
      */
     public function plan_whenPathExist_getBusesCount():void{
 
+
         $routeA = new Route(1);
+        $routeA->addStop(5);
         $busA = new Bus('A', $routeA);
         $routeB = new Route(10);
+        $routeB->addStop(5);
         $busB = new Bus('B', $routeB);
 
         $planner = new BusPlanner([$busA, $busB]);
